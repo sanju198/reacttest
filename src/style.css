@@ -1,0 +1,88 @@
+.sidebar {
+  height: 40%;
+  width: 210px;
+  position: absolute;
+  z-index: 4;
+  top: 180px;
+  left: 0;
+  background-color: white;
+  padding-top: 16px;
+}
+.fontheader{
+  font-size: 20px;
+}
+.subtext{
+  font-size: 12px;
+}
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  color: #1b0d0dc7;
+  display: block;
+  
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+.underline-on-hover:hover {
+  text-decoration: underline;
+  width: 100%;
+        height: 6px;      
+}	
+
+.verticalDivider {
+  border-right: 1px solid #ccc !important;
+}
+.verticalDivider-xl{
+  border-right: 1px solid #ccc !important;
+  margin-right: 7px;
+  height: 31px;
+  margin-top: 2px;
+}
+
+.lelubgcolor
+{
+  background-color: #fafafa;
+}
+
+
+
+
+/* close */
+.menuImage{
+  margin-top: 22px;
+ margin-right: 300px;
+}
+.fontStyle{
+  font-size: 1.25rem;
+    margin: 0 2rem 0 0;
+}
+
+.btn-primary:hover {
+  background-color: black !important; 
+}
+.btn-primary a:hover {
+  color:white !important;
+}
+
+.closecircle {
+  background-color: #F80;
+  border: 3px solid #FFF;
+  border-radius: 18px;
+  box-shadow: 0 0 2px #888;
+  height: 30px;
+  width: 30px;
+}
+
