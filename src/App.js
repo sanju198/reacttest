@@ -21,13 +21,10 @@ class App extends React.Component {
     return (
       
       <div className="lelubgcolor">
-        
-       
-           
+     
       <div>
                 <Header />
       
-        
         <Footer/>
       </div>
       </div>

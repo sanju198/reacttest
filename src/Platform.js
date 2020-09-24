@@ -2,7 +2,7 @@ import React from 'react';
 import {
   MDBRow,
   MDBCol,
-  MDBContainer  
+  MDBContainer,MDBCard,MDBCardBody,MDBCardText  
 }  from "mdbreact";
 import './style.css';
 class Platform extends React.Component {
@@ -24,13 +24,17 @@ class Platform extends React.Component {
              <h1 className="font-weight-bold" >Platform</h1></div>
          </MDBCol>
           <MDBCol lg="6">
-           
-           
-          <div style={{"margin-left": "15px" ,"margin-top": "10px"}}>
-            <h6 className="text-white font-weight-bold warning-color-dark" align="center">SHAREPOINT 2013,2016 AND 2019</h6></div>
-      <div  className="text-dark font-weight-bold " style={{"margin-left": "15px" ,"margin-top": "10px"}}>
-      Our SharePoint solutions enhance our client's productivity by enabling collaboration with enterprise knowledge and information resources.
-      <ul>
+        
+         
+         <MDBCard className="mb-2">
+         <p type="button" class="btn warning-color-dark btn-lg btn-block text-white">SHAREPOINT 2013,2016 AND 2019</p>
+           <MDBCardBody>
+             
+             <MDBCardText>
+             Our SharePoint solutions enhance our client's productivity by enabling collaboration with enterprise knowledge and information resources.
+             <br></br>
+             <br></br>
+             <ul>
 								 <li> <a href className="dropdown-item">Business Applications</a></li>
                  <li><a href className="dropdown-item">Workflow and Collaboration Solution</a></li>								
 								 <li><a href className="dropdown-item">Reporting and BI</a></li>								 	
@@ -41,33 +45,26 @@ class Platform extends React.Component {
 								 <li><a href className="dropdown-item">Patch management, backup/replication</a></li>
 								 								  
 						  </ul>
-        </div>
+             </MDBCardText>
+             <button type="button" class="btn btn-outline-dark">More</button>
+           </MDBCardBody>
+         </MDBCard>
+   
+           
+          
           </MDBCol>
           <MDBCol lg="6">
-           
-          <div style={{"margin-left": "15px" ,"margin-top": "10px","color":"warning-color-dark"}}>
-            <h6 className="text-white warning-color-dark font-weight-bold" align="center">SHAREPOINT TOOLS AND TECHNOLOGIES</h6></div>
-      <div className="text-dark font-weight-bold " style={{"margin-left": "15px" ,"margin-top": "10px"}}>
-      SharePoint Server 2013, 2016 and 2019 Workflow Manager 2013,Reporting and BI,Custom Web Part, App Part,Migratin Tool like ShareGate, Metalogix,HTML, Javascript, ASP.NET,C#, JQuery.
-     
-        </div>
-         </MDBCol>
-         
-        </MDBRow>
-
-
-        <MDBRow>
         
-          <MDBCol lg="6">
-           
-           
-          <div style={{"margin-left": "15px" ,"margin-top": "10px"}}>
-            <h6 className="text-white font-weight-bold warning-color-dark" align="center">
-               Documentum
-                </h6></div>
-      <div  className="text-dark font-weight-bold " style={{"margin-left": "15px" ,"margin-top": "10px"}}>
-      OpenText Documentum provides a broad set of capabilities that manage content across file stores, enterprise applications, such as SAP, and collaborative tools, including Microsoft SharePoint. Its extensibility makes custom integrations simple. With Documentum, organizations ensure information is organized, preserved and easily accessible, while adhering to privacy and security protocols.
-      <ul>
+         
+         <MDBCard className="mb-2">
+         <p type="button" class="btn warning-color-dark btn-lg btn-block text-white">Documentum</p>
+           <MDBCardBody>
+             
+             <MDBCardText>
+             OpenText Documentum provides a broad set of capabilities that manage content across file stores, enterprise applications, such as SAP, and collaborative tools, including Microsoft SharePoint. Its extensibility makes custom integrations simple. With Documentum, organizations ensure information is organized, preserved and easily accessible, while adhering to privacy and security protocols.
+             <br></br>
+             <br></br>
+             <ul>
 								 <li> <a href className="dropdown-item">Case Management Solution</a></li>
                  <li><a href className="dropdown-item">Workflow and Collaboration Solution</a></li>								
 								 <li><a href className="dropdown-item">Crystal and BAM Reporting</a></li>								 	
@@ -78,17 +75,58 @@ class Platform extends React.Component {
 								 <li><a href className="dropdown-item">Patch management, backup/replication, <br/>Troubleshooting</a></li>
 								 								  
 						  </ul>
-        </div>
-          </MDBCol>
-          <MDBCol lg="6">
+             </MDBCardText>
+             <button type="button" class="btn btn-outline-dark">More</button>
+           </MDBCardBody>
+         </MDBCard>
+   
            
-          <div style={{"margin-left": "15px" ,"margin-top": "10px","color":"warning-color-dark"}}>
-            <h6 className="text-white warning-color-dark font-weight-bold" align="center">SHAREPOINT TOOLS AND TECHNOLOGIES</h6></div>
-      <div className="text-dark font-weight-bold " style={{"margin-left": "15px" ,"margin-top": "10px"}}>
-      SharePoint Server 2013, 2016 and 2019 Workflow Manager 2013,Reporting and BI,Custom Web Part, App Part,Migratin Tool like ShareGate, Metalogix,HTML, Javascript, ASP.NET,C#, JQuery.
-     
-        </div>
+          
+          </MDBCol>
+
+          <MDBCol lg="6">
+        
+         
+        <MDBCard className="mb-2">
+        <p type="button" class="btn warning-color-dark btn-lg btn-block text-white">SHAREPOINT TOOLS AND TECHNOLOGIES</p>
+          <MDBCardBody>
+            
+            <MDBCardText>
+            SharePoint Server 2013, 2016 and 2019 Workflow Manager 2013,Reporting and BI,Custom Web Part, App Part,Migratin Tool like ShareGate, Metalogix,HTML, Javascript, ASP.NET,C#, JQuery.
+            
+            </MDBCardText>
+            <button type="button" class="btn btn-outline-dark">More</button>
+          </MDBCardBody>
+        </MDBCard>
+  
+          
+         
          </MDBCol>
+         <MDBCol lg="6">
+        
+         
+        <MDBCard className="mb-2">
+        <p type="button" class="btn warning-color-dark btn-lg btn-block text-white">SHAREPOINT TOOLS AND TECHNOLOGIES</p>
+          <MDBCardBody>
+            
+            <MDBCardText>
+            SharePoint Server 2013, 2016 and 2019 Workflow Manager 2013,Reporting and BI,Custom Web Part, App Part,Migratin Tool like ShareGate, Metalogix,HTML, Javascript, ASP.NET,C#, JQuery.
+            </MDBCardText>
+            <button type="button" class="btn btn-outline-dark">More</button>
+          </MDBCardBody>
+        </MDBCard>
+  
+          
+         
+         </MDBCol>
+          
+         
+        </MDBRow>
+
+
+        <MDBRow>
+        
+          
          
         </MDBRow>
       </MDBContainer>

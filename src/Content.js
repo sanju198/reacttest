@@ -108,11 +108,9 @@ and Maintenance,SharePoint Online</a></li>
         </MDBRow>
       </MDBContainer>
 </div>
-<br/>
+
 
 <Platform/>
-<br/>
-<br/>
 
             
       </div>

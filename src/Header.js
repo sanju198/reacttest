@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import {
 MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem,MDBNavLink, MDBNavbarToggler, MDBCollapse, MDBFormInline,
-MDBDropdown,MDBCloseIcon, MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem,MDBLink,MDBTabContent,MDBTabPane,MDBRow,MDBCol,MDBContainer
+MDBDropdown,MDBCloseIcon, MDBDropdownToggle,MDBLink,MDBTabContent,MDBTabPane,MDBRow,MDBCol,MDBContainer
 } from "mdbreact";
 import { BrowserRouter as Router} from 'react-router-dom';
 import logo from './logo.png';
@@ -79,11 +79,11 @@ render() {
           <MDBNavItem>
               <MDBDropdown>
 
-              <MDBDropdownToggle nav  className=" md-2 text-dark font-weight-bold ">
+              <div nav  className=" md-2 text-dark font-weight-bold nav-link dropdown-toggle ">
               <span>&nbsp;&nbsp;&nbsp;&nbsp;Services</span>
-                </MDBDropdownToggle>
-                <MDBDropdownMenu >
-                  <MDBDropdownItem href="#!">
+                </div>
+                <div className="dropdown-menu">
+                  <div href="#!">
                   <div className="d-flex bd-highlight">
   <div>
   <MDBLink to='#'  className=" md-2 text-dark font-weight-bold " active={activeItemPills === 'IT Consultancy'} onClick={this.togglePills('IT Consultancy')} link>
@@ -98,8 +98,8 @@ render() {
                     </MDBLink>
   </div>
 </div>
-    </MDBDropdownItem> 
-                </MDBDropdownMenu>
+    </div> 
+                </div>
               </MDBDropdown>
             </MDBNavItem>
             <MDBNavItem>
@@ -112,23 +112,30 @@ render() {
             </MDBNavItem>
             <MDBNavItem>
               <MDBDropdown>
-                <MDBDropdownToggle nav  className=" md-2 text-dark font-weight-bold ">
-                  <span>&nbsp;&nbsp;&nbsp;&nbsp;Platform</span>
-                </MDBDropdownToggle>
-                <MDBDropdownMenu>
-                  <MDBDropdownItem href="#!">
+              <div nav  className=" md-2 text-dark font-weight-bold nav-link dropdown-toggle ">
+              <span>&nbsp;&nbsp;&nbsp;&nbsp;Services</span>
+                </div>
+                <div className="dropdown-menu">
+                  <div href="#!">
                   <div className="d-flex bd-highlight">
-  <div className="p-2 flex-fill bd-highlight">
-  <p>Sharepoint</p>
-  <p>Documentum</p>
-  <p>ERP Solution</p> 
-  <p>Programing Language</p> 
+  <div>
+  <MDBLink to='#'  className=" md-2 text-dark font-weight-bold " active={activeItemPills === 'IT Consultancy'} onClick={this.togglePills('IT Consultancy')} link>
+                  <span>SharePoint</span>
+                    </MDBLink>
+ 
+                    <MDBLink to='#'  className=" md-2 text-dark font-weight-bold " active={activeItemPills === 'Manage Application Services'} onClick={this.togglePills('Manage Application Services')} link>
+                  <span>Documentum</span>
+                    </MDBLink>
+                    <MDBLink to='#'  className=" md-2 text-dark font-weight-bold " active={activeItemPills === 'outsourcing'} onClick={this.togglePills('outsourcing')} link>
+                  <span>ERP Solution</span>
+                    </MDBLink>
+                    <MDBLink to='#'  className=" md-2 text-dark font-weight-bold " active={activeItemPills === 'outsourcing'} onClick={this.togglePills('outsourcing')} link>
+                  <span>Programming Language</span>
+                    </MDBLink>
   </div>
 </div>
-
-                  </MDBDropdownItem>
-                  
-                </MDBDropdownMenu>
+    </div> 
+                </div>
               </MDBDropdown>
             </MDBNavItem>
             <MDBNavItem>
@@ -172,6 +179,8 @@ render() {
                   <MDBContainer>
         <MDBRow>
         <MDBCol lg="12">
+
+          
            
            <div style={{"margin-left": "15px" ,"margin-top": "10px","color":"red"}}>
              <h1 className="font-weight-bold" >IT CONSULTANCY/PROFESSIONAL SERVICE</h1>
