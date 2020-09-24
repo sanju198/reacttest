@@ -2,7 +2,7 @@ import React from 'react';
 import {
   MDBRow,
   MDBCol,
-  MDBContainer  
+  MDBContainer,MDBCard,MDBCardBody,MDBCardText
 }  from "mdbreact";
 import './style.css';
 import Platform from './Platform';
@@ -25,12 +25,13 @@ class Content extends React.Component {
              <h1 className="font-weight-bold" >SERVICES</h1></div>
          </MDBCol>
           <MDBCol lg="4">
-           
-           
-          <div style={{"margin-left": "15px" ,"margin-top": "10px"}}>
-            <h6 className="text-white font-weight-bold warning-color-dark">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IT CONSULTANCY</h6></div>
-      <div style={{"margin-left": "15px" ,"margin-top": "10px"}}>
-      <ul>
+         
+                <MDBCard className="mb-2">
+                <p type="button" class="btn warning-color-dark btn-lg btn-block text-white">IT CONSULTANCY</p>
+                  <MDBCardBody>
+                    
+                    <MDBCardText>
+                    <ul>
 								 <li> <a href className="dropdown-item">Solution Architect and Design</a></li>
                  <li><a href className="dropdown-item">Application Development <br/>and Enhancement</a></li>								
 								 <li><a href className="dropdown-item">Maintenance and Support</a></li>								 	
@@ -38,40 +39,54 @@ class Content extends React.Component {
 								 <li><a href className="dropdown-item">Integration</a></li>
                  <li><a href className="dropdown-item">Case Management Solution</a></li>
                  <li> <a href className="dropdown-item">Enterprise Document Management <br/>System (EDMS)</a></li>
-								 <li><a href className="dropdown-item">Enterprise Content Management (ECM)</a></li>
-								 								  
+								 <li><a href className="dropdown-item">Enterprise Content Management (ECM)</a></li>								  
 						  </ul>
-        </div>
+
+                    </MDBCardText>
+                    <button type="button" class="btn btn-outline-dark">More</button>
+                  
+                  </MDBCardBody>
+                </MDBCard>
+              
+
           </MDBCol>
+
           <MDBCol lg="4">
-           
-          <div style={{"margin-left": "15px" ,"margin-top": "10px","color":"warning-color-dark"}}>
-            <h6 className="text-white warning-color-dark font-weight-bold">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MANAGED IT APPLICATIONS SERVICE</h6></div>
-      <div style={{"margin-left": "15px" ,"margin-top": "10px"}}>
-      <ul>
+         
+                <MDBCard className="mb-2">
+                <p type="button" class="btn warning-color-dark btn-lg btn-block text-white">MANAGED IT APPLICATIONS SERVICE</p>
+                  <MDBCardBody>
+                    
+                    <MDBCardText>
+                    <ul>
 								 <li> <a href className="dropdown-item">Complete Managed Application based<br/>
 on Opentext Documentum, SharePoint,<br/>
-Java/J2EE, Dot NET</a></li>
+Java/J2EE, Dot NET,Support</a></li>
                  <li><a href className="dropdown-item">Microsoft PowerApps, Microsoft<br/>
-Dynamics, Power BI</a></li>								
+Dynamics, Power BI,Operation </a></li>								
 								 <li><a href className="dropdown-item">Documentum xCP, D2, EPFM<br/>
-Capital Projects</a></li>								 	
-                 <li><a href className="dropdown-item">SharePoint Online, Office 365</a></li>
+Capital Projects,Office 365</a></li>								 	
+               
 								 <li><a href className="dropdown-item">Optimize Application Environment</a></li>
-                 <li><a href className="dropdown-item">Operation and Support</a></li>
+                 
                  <li> <a href className="dropdown-item">Configuration and Optimizations</a></li>
 								 <li><a href className="dropdown-item">Administration, Monitoring<br/>
-and Maintenance</a></li>
+and Maintenance,SharePoint Online</a></li>
 								 								  
 						  </ul>
-        </div>
-         </MDBCol>
+                    </MDBCardText>
+                    <button type="button" class="btn btn-outline-dark">More</button>
+                  </MDBCardBody>
+                </MDBCard>
+          </MDBCol>
           <MDBCol lg="4">
-           
-          <div style={{"margin-left": "15px" ,"margin-top": "10px"}}>
-            <h6 className="text-white font-weight-bold warning-color-dark">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OutSourcing</h6></div>
-      <div style={{"margin-left": "15px" ,"margin-top": "10px"}}>
-      <ul>
+         
+         <MDBCard className="mb-2">
+         <p type="button" class="btn warning-color-dark btn-lg btn-block text-white">OutSourcing</p>
+           <MDBCardBody>
+             
+             <MDBCardText>
+             <ul>
 								 <li> <a href className="dropdown-item">Solution Architect and Design</a></li>
                  <li><a href className="dropdown-item">Application Development <br/>and Enhancement</a></li>								
 								 <li><a href className="dropdown-item">Maintenance and Support</a></li>								 	
@@ -82,8 +97,14 @@ and Maintenance</a></li>
 								 <li><a href className="dropdown-item">Enterprise Content Management (ECM)</a></li>
 								 								  
 						  </ul>
-        </div>
-          </MDBCol>
+             </MDBCardText>
+             <button type="button" class="btn btn-outline-dark">More</button>
+           </MDBCardBody>
+         </MDBCard>
+       
+
+   </MDBCol>
+         
         </MDBRow>
       </MDBContainer>
 </div>

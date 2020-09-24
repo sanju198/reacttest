@@ -11,6 +11,7 @@ import './style.css';
 import AboutUs from './AboutUs';
 import Slider from './Slider.js';
 import Content from "./Content";
+
 class NavbarPage extends Component {
 state = {
   isOpen: false,
@@ -274,6 +275,7 @@ render() {
 
                   <MDBTabPane tabId='aboutus'>
                     <br/>
+                  
                   <AboutUs/>
                   </MDBTabPane>
                   
@@ -315,7 +317,7 @@ render() {
         
                   </MDBTabPane>
                   </MDBTabContent>
-                  
+                
     </Router>
     
     );
