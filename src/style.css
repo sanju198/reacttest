@@ -94,3 +94,12 @@
   text-decoration: underline;
   transform: rotate(-90deg);
 } 
+
+.section1::before
+ {
+display: block;
+content: " ";
+margin-bottom: 65px;
+height: 65px;
+visibility: hidden;
+}

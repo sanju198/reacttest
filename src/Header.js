@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import {
 MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem,MDBNavLink, MDBNavbarToggler, MDBCollapse, MDBFormInline,
-MDBDropdown,MDBCloseIcon, MDBDropdownToggle,MDBLink,MDBTabContent,MDBTabPane,MDBRow,MDBCol,MDBContainer
+MDBDropdown,MDBCloseIcon, MDBDropdownToggle,MDBLink,MDBTabContent,MDBTabPane,MDBRow,MDBCol,MDBContainer,MDBFooter
 } from "mdbreact";
 import { BrowserRouter as Router} from 'react-router-dom';
 import logo from './logo.png';
@@ -105,15 +105,16 @@ render() {
             <MDBNavItem>
             
               
-              <MDBLink to='#'  className=" md-2 text-dark font-weight-bold " active={activeItemPills === 'aboutus'} onClick={this.togglePills('aboutus')} link>
-              <span>&nbsp;&nbsp;&nbsp;&nbsp;AboutUs</span>
+              <MDBLink to='#'  className=" md-2 text-dark font-weight-bold aboutus" active={activeItemPills === 'aboutus'} onClick={this.togglePills('aboutus')} link>
+              
+              <span>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#aboutus"  className=" md-2 text-dark font-weight-bold " >AboutUs</a></span>
                 </MDBLink>
                 
             </MDBNavItem>
             <MDBNavItem>
               <MDBDropdown>
               <div nav  className=" md-2 text-dark font-weight-bold nav-link dropdown-toggle ">
-              <span>&nbsp;&nbsp;&nbsp;&nbsp;Services</span>
+              <span>&nbsp;&nbsp;&nbsp;&nbsp;Platform</span>
                 </div>
                 <div className="dropdown-menu">
                   <div href="#!">
@@ -186,7 +187,10 @@ render() {
              <h1 className="font-weight-bold" >IT CONSULTANCY/PROFESSIONAL SERVICE</h1>
              </div>
          </MDBCol>
-         We are maintaining the professional skilled Resource pool for ECM technology and providing trustable service starting from but not limited ECM platform like SharePoint and Opentext Documentum. Also, we are providing business support to the customer starting from Architect design, development, enhancement and support not limited to ECM Technology.
+       <p className="dropdown-item">  
+       We are maintaining the professional skilled Resource pool for ECM technology and providing trustable  <br></
+       br>service starting from but not limited ECM platform like SharePoint and Opentext Documentum. Also, <br></br>
+       we are providing business support to the customer starting from Architect design, development, <br></br>enhancement and support not limited to ECM Technology.</p>
           <MDBCol lg="4">
         
           <div style={{"margin-left": "15px" ,"margin-top": "10px","color":"red"}}>
@@ -284,7 +288,7 @@ render() {
 
                   <MDBTabPane tabId='aboutus'>
                     <br/>
-                  
+                   
                   <AboutUs/>
                   </MDBTabPane>
                   
@@ -326,6 +330,72 @@ render() {
         
                   </MDBTabPane>
                   </MDBTabContent>
+
+
+                  <MDBFooter color="black" className="font-small pt-4 mt-4">
+     <MDBContainer>
+        <MDBRow>
+        <MDBCol lg="4">
+        <div>
+        <h6 class="text-uppercase mb-4 font-weight-bold">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Services</h6>
+        <p>
+        <MDBLink to='#'  className=" md-2 text-white font-weight-bold " active={activeItemPills === 'IT Consultancy'} onClick={this.togglePills('IT Consultancy')} link>
+                  <span>IT Consultancy</span>
+                    </MDBLink>
+        </p>
+        <p>
+        <MDBLink to='#'  className=" md-2 text-white font-weight-bold " active={activeItemPills === 'Manage Application Services'} onClick={this.togglePills('Manage Application Services')} link>
+                  <span>Manage Application Services</span>
+                    </MDBLink>
+                    </p>
+                    <p>
+                    <MDBLink to='#'  className=" md-2 text-white font-weight-bold " active={activeItemPills === 'outsourcing'} onClick={this.togglePills('outsourcing')} link>
+                  <span>Outsourcing</span>
+                    </MDBLink>
+                    </p>
+      </div>
+    </MDBCol>
+    <MDBCol lg="4">
+        <div>
+        <h6 class="text-uppercase mb-4 font-weight-bold">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PlatForm</h6>
+        <p>
+        <MDBLink to='#'  className=" md-2 text-white font-weight-bold " active={activeItemPills === 'IT Consultancy'} onClick={this.togglePills('IT Consultancy')} link>
+                  <span>SharePoint</span>
+                    </MDBLink></p>
+                    <p>
+                    <MDBLink to='#'  className=" md-2 text-white font-weight-bold " active={activeItemPills === 'Manage Application Services'} onClick={this.togglePills('Manage Application Services')} link>
+                  <span>Documentum</span>
+                    </MDBLink></p>
+                    <p>
+                    <MDBLink to='#'  className=" md-2 text-white font-weight-bold " active={activeItemPills === 'outsourcing'} onClick={this.togglePills('outsourcing')} link>
+                  <span>ERP Solution</span>
+                    </MDBLink></p>
+                    <p>
+                    <MDBLink to='#'  className=" md-2 text-white font-weight-bold " active={activeItemPills === 'outsourcing'} onClick={this.togglePills('outsourcing')} link>
+                  <span>Programming Language</span>
+                    </MDBLink></p>
+      </div>
+    </MDBCol>
+    <MDBCol lg="4">
+        <div>
+        <h6 class="text-uppercase mb-4 font-weight-bold">AboutUs</h6>
+        <p>
+        <MDBLink to='#'  className=" md-2 " active={activeItemPills === 'aboutus'} onClick={this.togglePills('aboutus')} link>
+              <span>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#aboutus" className="text-white font-weight-bold ">AboutUs</a></span>
+                </MDBLink>
+        </p>
+        
+      </div>
+    </MDBCol>
+  </MDBRow>
+  </MDBContainer>
+  
+      <div className="footer-copyright text-center py-3">
+        <MDBContainer fluid>
+         
+        </MDBContainer>
+      </div>
+    </MDBFooter>
                 
     </Router>
     

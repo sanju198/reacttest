@@ -43,7 +43,7 @@ class Content extends React.Component {
 						  </ul>
 
                     </MDBCardText>
-                    <button type="button" class="btn btn-outline-dark">More</button>
+                    <button type="button" className="btn btn-outline-dark float-right" >More</button>
                   
                   </MDBCardBody>
                 </MDBCard>
@@ -75,7 +75,7 @@ and Maintenance,SharePoint Online</a></li>
 								 								  
 						  </ul>
                     </MDBCardText>
-                    <button type="button" class="btn btn-outline-dark">More</button>
+                    <button type="button" class="btn btn-outline-dark float-right">More</button>
                   </MDBCardBody>
                 </MDBCard>
           </MDBCol>
@@ -98,7 +98,7 @@ and Maintenance,SharePoint Online</a></li>
 								 								  
 						  </ul>
              </MDBCardText>
-             <button type="button" class="btn btn-outline-dark">More</button>
+             <button type="button" class="btn btn-outline-dark float-right">More</button>
            </MDBCardBody>
          </MDBCard>
        

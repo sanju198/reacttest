@@ -46,7 +46,7 @@ class Platform extends React.Component {
 								 								  
 						  </ul>
              </MDBCardText>
-             <button type="button" class="btn btn-outline-dark">More</button>
+             <button type="button" className="btn btn-outline-dark float-right">More</button>
            </MDBCardBody>
          </MDBCard>
    
@@ -76,7 +76,7 @@ class Platform extends React.Component {
 								 								  
 						  </ul>
              </MDBCardText>
-             <button type="button" class="btn btn-outline-dark">More</button>
+             <button type="button" class="btn btn-outline-dark float-right">More</button>
            </MDBCardBody>
          </MDBCard>
    
@@ -95,7 +95,7 @@ class Platform extends React.Component {
             SharePoint Server 2013, 2016 and 2019 Workflow Manager 2013,Reporting and BI,Custom Web Part, App Part,Migratin Tool like ShareGate, Metalogix,HTML, Javascript, ASP.NET,C#, JQuery.
             
             </MDBCardText>
-            <button type="button" class="btn btn-outline-dark">More</button>
+            <button type="button" class="btn btn-outline-dark float-right">More</button>
           </MDBCardBody>
         </MDBCard>
   
@@ -112,7 +112,7 @@ class Platform extends React.Component {
             <MDBCardText>
             SharePoint Server 2013, 2016 and 2019 Workflow Manager 2013,Reporting and BI,Custom Web Part, App Part,Migratin Tool like ShareGate, Metalogix,HTML, Javascript, ASP.NET,C#, JQuery.
             </MDBCardText>
-            <button type="button" class="btn btn-outline-dark">More</button>
+            <button type="button" class="btn btn-outline-dark float-right">More</button>
           </MDBCardBody>
         </MDBCard>
   
